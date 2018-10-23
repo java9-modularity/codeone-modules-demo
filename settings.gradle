@@ -1,0 +1,8 @@
+rootProject.name = 'stockwatch'
+include 'stockwatch.api'
+include 'stockwatch.web'
+include 'stockwatch.storage'
+include 'symbolfetcher'
+include 'symbolfetch.test'
+include 'stockwatch.cron'
+

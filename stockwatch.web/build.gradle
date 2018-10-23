@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+dependencies {
+    compile 'io.vertx:vertx-web:3.5.3'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    runtime 'org.slf4j:slf4j-simple:1.7.25'
+
+    compile project(':stockwatch.api')
+    runtime project(':stockwatch.storage')
+    compile project(':symbolfetcher')
+    compile project(':stockwatch.cron')
+}
+
+mainClassName = "$moduleName/codeone.stockwatch.web.Main"
