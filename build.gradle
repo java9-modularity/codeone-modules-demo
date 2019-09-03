@@ -3,9 +3,11 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
+
+        mavenLocal()
     }
     dependencies {
-        classpath "gradle.plugin.org.javamodularity:moduleplugin:1.0.1"
+        classpath "org.javamodularity:moduleplugin:1.6.1-SNAPSHOT"
     }
 }
 
@@ -17,8 +19,8 @@ subprojects {
     group 'codeone'
     version '1.0-SNAPSHOT'
 
-    sourceCompatibility = 11
-    targetCompatibility = 11
+    sourceCompatibility = 12
+    targetCompatibility = 12
 
     repositories {
         mavenCentral()
